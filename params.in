@@ -1,0 +1,30 @@
+#!sh
+# input parameter file for qgw, to recreate reference run presented in figure 1.
+
+# Resolution
+NX = 4096
+NY = 4096
+nl = 2
+
+# parameters
+Lx = 4000e3
+f0 = 9.4e-05
+beta = 1.7e-11
+tau0 = 1e-05
+dh = [40., 3960.]
+N2 = [0.000183]
+
+# n_hyper = 2 sets a laplacian viscosity operator
+n_hyper = 2
+nu_hyper = 10
+
+# forc_mode = 2.0 corresponds to a double gyre forcing
+forc_mode = 2.0 
+
+# bc_fac = 0: free slip, 1: no slip, [0..1]: partial slip
+bc_fac = 1.
+
+# timestepping
+tend  =  500000000
+dt_out = 1000000
+
